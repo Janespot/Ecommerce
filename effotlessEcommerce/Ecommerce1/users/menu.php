@@ -6,6 +6,27 @@
 		<link rel = "stylesheet" href = "../css/styles.css" />
 	</head>
 	<body>
+		<table width = "100%" cellspacing = "0" cellpadding = "2">
+		<col style = "width:30%">
+		<col style = "width:40%">
+		<col style = "width:20%">
+			<tr><td style ="background-color:cyan;color:blue;"></td>
+			<td style ="background-color:cyan;color:blue;"></td>
+			<td style ="background-color:cyan;color:blue;"></td>
+			</tr>
+				<tr><td style = "font-size:35px;color:blue;background-color:cyan;">
+				<b>Janespot Online Shop</b></td>
+				<td bgcolor = "cyan">
+					<form method = "post" action = "searchitems.php">
+						<input size = "50" type = "search" name = "tosearch" />
+						<input type = "submit" name = "submit" value = "Search" />
+					</form>
+				</td>
+				<td bgcolor = "cyan"><a href = "cart.php"><img style = "max-width:40px;
+				max-height:40px;width:auto;height:auto;" src = "../images/cart.png"></img>
+				<span id = "cartcountinfo"></span></a></td>
+				</tr>
+		</table>
 		<div class = "container">
 			<nav>
 			<ul class = "nav">

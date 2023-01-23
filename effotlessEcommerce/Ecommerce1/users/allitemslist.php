@@ -16,9 +16,10 @@
 		
 		while($row=$result->fetch_assoc()){
 			if($x <= 3){
-				$x+=1;
+				$x = $x + 1;
+				$itemCode = $row['itemCode'];
 				echo"<td style = \"padding-right:15px;\">";
-				echo"<a href=itemdetails.php?itemcode=$row['itemCode']>";
+				echo"<a href='itemdetails.php?itemcode=$itemCode'>";
 				echo"<img src = ".$row['imageName']."style = \"max-width:220px;
 				max-height:240px;width:auto;height:auto;\"></img><br />";
 				echo $row['itemName']."<br />";

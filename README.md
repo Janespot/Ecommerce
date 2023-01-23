@@ -16,7 +16,7 @@ the products selected. Selecting a product leads to that product page showing it
 ### Ecommerce2
 This is a folder whose project entails an ecommerce website that sells services. A user is only allowed to see various content upon payment. Without payment the user can only see brief content. An admin would see both the full content and more content that is only meant for the admin.
 
-###Ecommerce3
+### Ecommerce3
 This is a folder whose project entails an ecommerce website that allows users to order food online. The homepage contains food menu and for the user to order food, they have to login first. The user can see order history and complete food payment. The admin then views all site content such as registered users, orders history, total amount etc. The admin can also add dishes, users, remove them and do all the site operations after logging in. To see how the site operates, use 'admin' as both username and password for the admin page.
 
 ### trial

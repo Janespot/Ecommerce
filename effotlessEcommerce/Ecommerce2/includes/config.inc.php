@@ -8,7 +8,7 @@ define('MYSQL', './includes/mysql.inc.php');
 
 session_start();
 
-function my_error_handler($e_number, $e_message, $e_file, $e_line, $e_vars){//a function that reports errors
+function my_error_handler($e_number, $e_message, $e_file, $e_line, /*$e_vars*/){//a function that reports errors
 	global $live, $contact_email;
 	$message = "An error occured in script '$e_file'on line $e_line:\n$e_message\n";//error message
 	$message .= "<pre>".print_r(debug_backtrace(),1)."</pre>\n";

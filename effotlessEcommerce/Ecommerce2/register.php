@@ -43,7 +43,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 		$rows = mysqli_num_rows($r);
 		if($rows == 0){ //no problems
 			$q = "INSERT INTO users (username, email, pass, first_name, last_name, date_expires) 
-			VALUES ('$u', '$e','".create_password_hash($p)."', '$fn', '$ln', ADDDATE(NOW(), 
+			VALUES ('$u', '$e','". get_password_hash($p) ."', '$fn', '$ln', ADDDATE(NOW(), 
 			INTERVAL 1 MONTH))";
 			$r = mysqli_query($conn, $q);
 			if(mysqli_affected_rows($conn) == 1){

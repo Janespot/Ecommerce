@@ -23,3 +23,18 @@ function my_error_handler($e_number, $e_message, $e_file, $e_line, /*$e_vars*/){
 	return true;
 }
 set_error_handler('my_error_handler');
+
+if(!headers_sent()){
+	function redirect_invalid_user($check = 'user_id', $destination = 'index.php', $protocol = 'http://'){//function to 
+	//redirect unauthorised users
+		if(!isset($_SESSION[$check])){
+			$url = $protocol.BASE_URL.$destination;
+			header("Location:$url");
+			exit();
+		}
+	}
+}else{
+	include_once('./includes/header.html');
+	trigger_error('You do not have permission to access this page. Please login and try again.');
+	include_once('./includes/footer.html');
+}

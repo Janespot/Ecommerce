@@ -1,6 +1,6 @@
 <?php
 require('./includes/config.inc.php');
-//redirect_invalid_user( );
+redirect_invalid_user( );
 $page_title = "Change Password";
 include('./includes/header.html');
 require(MYSQL);

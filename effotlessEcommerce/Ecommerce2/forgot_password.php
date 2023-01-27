@@ -59,4 +59,3 @@ require('./includes/form_functions.inc.php');
 <?php
 include('./includes/footer.html');
 ?>
-		

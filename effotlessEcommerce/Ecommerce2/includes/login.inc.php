@@ -1,3 +1,4 @@
+<div class = "side">
 <div class = 'title'>
 <h4>Login</h4>
 </div>
@@ -13,3 +14,4 @@
 	<a href="forgot_password.php" align="right">Forgot password?</a><br /><br />
 	<input type="submit" value="Login &rarr;"></p>
 </form>
+</div>
